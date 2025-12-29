@@ -92,7 +92,7 @@ header{
         align-items: center;
         gap: 1.5rem;
 
-        background-color: yellow;
+        background-color: #2b2d42;
         position: absolute;
         top: 100%;
         left: 0;
@@ -449,6 +449,7 @@ footer{
         max-width: 350px;
     }
 }
+
 
 
 
