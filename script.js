@@ -60,6 +60,10 @@ function validateForm() {
         button.textContent = "Message Sent!";
         button.disabled = true;
 
+        document.getElementById("form-name").value = "";
+        document.getElementById("form-email").value = "";
+        document.getElementById("form-message").value = "";
+
         setTimeout(() => {
             button.textContent = "Send the Message!";
             button.disabled = false;
@@ -69,3 +73,4 @@ function validateForm() {
     return false;
 
 }
+
