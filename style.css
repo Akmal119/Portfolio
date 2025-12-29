@@ -126,9 +126,6 @@ section{
 }
 
 .about img{
-    /*width: 30vw;
-    height: 50vh;
-    border-radius: 50%;*/
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -157,9 +154,6 @@ section{
 }
 
 .text-grp span{
-    /*background: linear-gradient(to right,rgb(0, 157, 255),rgb(255, 0 ,255));
-    background-clip: text;
-    color: transparent;*/
     color: #2b2d42;
     font-size: 2rem;
 }
@@ -420,18 +414,16 @@ footer{
     justify-content: center;
 }
 
-/* =========================
-   RESPONSIVE (simple)
-   ========================= */
+
 @media (max-width: 768px) {
 
-    /* HEADER */
+   
     header {
         gap: 1.5rem;
         padding: 0.5rem 1rem;
     }
 
-    /* ABOUT SECTION */
+    
     .about .about-container {
         flex-direction: column;
         gap: 3rem;
@@ -447,17 +439,17 @@ footer{
         font-size: 2.5rem;
     }
 
-    /* PROJECTS SECTION */
+   
     .projects-grid {
         grid-template-columns: 1fr;
     }
 
-    /* CONTACT SECTION */
     .contact-box {
         width: 100%;
         max-width: 350px;
     }
 }
+
 
 
 
