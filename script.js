@@ -66,5 +66,6 @@ function validateForm() {
         }, 2000);
     }
 
-    return false; // prevent page reload
+    return false;
+
 }
