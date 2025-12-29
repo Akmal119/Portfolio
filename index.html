@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="nav-container">
+                <div class="logo">Portfolio</div>
+                <nav>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <i class="fa-solid fa-bars menu-icon" onclick="toggleMenu()"></i>
+            </div>
+        </header>
+        <!--home section-->
+        <section id="home" class="about">
+            <div class="about-container">
+                <img src="profile.png" alt="">
+                <div class="info-box">
+                    <div class="text-grp">
+                        <h3>Hi, I'm</h3>
+                        <h1>Mohamed Akmal</h1>
+                        <span>Fullstack Developer</span>
+                    </div>
+                    <div class="btn-group">
+                        <div class="btn">
+                            Download CV
+                        </div>
+                        <div class="btn">
+                            Contact
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About Section-->
+        <section id="about" class="about-section">
+            <h2 class="section-title">
+                About Me
+            </h2>
+            <p class="about-text">
+                I am Mohamed Akmal, a passionate full-stack developer who enjoys building
+                clean and functional web applications. I am continuously learning new
+                technologies and improving my problem-solving skills.
+            </p>
+        </section>
+        <!--Skills section-->
+        <section id="skills" class="skills">
+            <h2 class="section-title">
+                Skills
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>Programming Languages</h4>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill java"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill python"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill cpp"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Prolog</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill prolog"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h4>Web Development</h4>
+                    <div class="skill">
+                        <span>HTML / CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill html"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill react"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h4>Tools & Technologies</h4>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill sql"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Rest APIs</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill rest"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Project Section-->
+        <section id="projects" class="projects">
+            <h2 class="section-title">
+                Recent Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Student Management System</h3>
+                    <p>
+                        A full stack web application to manage student records, including
+                        registration, updating details, and viewing student information.
+                    </p>
+                    <p class="tech-used">
+                        Technologies: HTML, CSS, JavaScript, PHP, MySQL
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3>Online Shopping Website</h3>
+                    <p>
+                        An e-commerce website that allows users to browse products,
+                        add items to cart, and place orders securely.
+                    </p>
+                    <p class="tech-used">
+                        Technologies: React, Node.js, Express, MongoDB
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        A responsive personal portfolio website to showcase skills,
+                        projects, and contact information.
+                    </p>
+                    <p class="tech-used">
+                        Technologies: HTML, CSS, JavaScript
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--contactn section-->
+        <section id="contact" class="contact">
+            <div>
+                <h1 class="section-title">
+                    Contact Me
+                </h1>
+                <div class="contact-box">
+                    <div class="field">
+                        <label for="">Name</label>
+                        <input type="text" id="form-name" placeholder="Enter your name">
+                        <span id="name-error"></span>
+                    </div>
+                    <div class="field">
+                        <label for="">Email</label>
+                        <input type="email" id="form-email" placeholder="Enter your email">
+                        <span id="email-error"></span>
+                    </div>
+                    <div class="field">
+                        <label for="">Message</label>
+                        <textarea id="form-message" placeholder="Enter your message"></textarea>
+                        <span id="message-error"></span>
+                    </div>
+                    <button class="submit-btn" id="form-submit" onclick="return validateForm()">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!--Footer section-->
+        <footer>
+            <p class="email">mhdakmal119@gmail.com</p>
+            <p class="copyright">
+                &copy; Mohamed Akmal. All right reserved.
+            </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
