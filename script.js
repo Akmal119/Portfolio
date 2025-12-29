@@ -3,6 +3,12 @@ function toggleMenu(){
     navLinks.classList.toggle("show");
 
 }
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.remove("show");
+    });
+});
 
 
 let nameError = document.getElementById("name-error");
@@ -73,4 +79,5 @@ function validateForm() {
     return false;
 
 }
+
 
